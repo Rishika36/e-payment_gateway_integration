@@ -1,0 +1,131 @@
+*{
+	padding: 0px;
+	margin:0px;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	font-family: 'Sansita Swashed', cursive;
+	background-color:black;
+	color: white;
+}
+.logo{
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+.nav-links {
+	display: flex;
+	background-color:;
+	
+}
+.nav-links li{
+	background-color: ;
+	opacity: 1;
+	list-style: none;
+		padding-left: 4%;
+	padding-right: 4%;
+
+}
+.nav-links li:hover{
+opacity: 1;}
+.nav-links li a:hover{
+	border-bottom: 2px solid white; 
+}
+.nav-links a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 3px;
+
+}
+.burger {
+	display:none;
+	cursor: pointer;
+}
+.burger div{
+	width: 20px;
+	height: 2px;
+	margin: 5px;
+	background-color: white;
+}
+@media screen and (max-width: 760px){
+	.nav-links{
+padding-left: 5%;
+	}
+}
+@media screen and (max-width:760px){
+	body{
+		overflow-x:hidden;
+	}
+	.nav-links{
+		position:fixed;
+		right: 0px;
+		height:100%;
+		top:8%;
+		background-color:black;
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+		width: 30%;
+		transform: translate(100%);
+		transition: transform 0.5s ease-in;
+		color: white;
+	}
+	.nav-links li{
+		opacity:0;
+		padding: 20%;
+	}
+	.nav-links li:hover{
+		opacity: 1;
+	}
+	.nav-links li a:hover{
+		color: white;
+		opacity: 1;
+	}
+	.burger{
+		display:block;
+	}
+}
+.nav-active{
+	transform: translateX(0%);
+}
+@keyframes navLinkFade{
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+div.toggle div.line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+div.toggle div.line2{
+opacity: 0;}
+div.toggle div.line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+/* ---Now the starting of heading statement  ----*/
+.slide-data{
+	color: white;
+}
+div.getstart{
+	align-content: center;
+}
+div.getstart a div{
+	border: 1px solid white; padding:0.5rem 1rem 0.5rem 1rem; display: inline-block; border-radius: 10px;
+}
+div.getstart a:hover div{
+	background-color: white;
+	color: black;
+}
